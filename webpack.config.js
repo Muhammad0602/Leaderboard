@@ -12,9 +12,9 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    filename: '[name].js',
+    path: __dirname + '/build',
+    chunkFilename: '[id].[chunkhash].js'
   },
   module: {
     rules: [
@@ -31,4 +31,5 @@ module.exports = {
   optimization: {
     runtimeChunk: 'single',
   },
+  mode: 'development',
 }
