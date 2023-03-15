@@ -1,9 +1,9 @@
-# webpackSetUp
+# Leaderboard
 <a name="readme-top"></a>
 
 <div align="center">
 
-  <h3><b> My Books README</b></h3>
+  <h3><b> Leaderboard README</b></h3>
 
 </div>
 
@@ -26,10 +26,10 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖Webpack <a name="about-project"></a>
+# 📖Leaderboard <a name="about-project"></a>
 
 
-This is a project about getting the basics of webpack. You will be able to load JavaScript, CSS and also images via webpack.
+This project is about interating with API. You can sumbit your score, and see it in the board after it is refreshed.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -39,6 +39,8 @@ This is a project about getting the basics of webpack. You will be able to load 
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">HTML</a></li>
+    <li><a href="https://reactjs.org/">CSS</a></li>
+    <li><a href="https://reactjs.org/">Webpack</a></li>
     <li><a href="https://reactjs.org/">JavaScript</a></li>
   </ul>
 </details>
