@@ -45,6 +45,7 @@ tr {
   justify-content: space-between;
   padding: 0.5rem;
 }
+
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
