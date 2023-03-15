@@ -13,8 +13,8 @@ module.exports = {
   ],
   output: {
     filename: '[name].js',
-    path: __dirname + '/build',
-    chunkFilename: '[id].[chunkhash].js'
+    path: path.resolve(__dirname, 'dist'),
+    chunkFilename: '[id].[chunkhash].js',
   },
   module: {
     rules: [
@@ -32,4 +32,4 @@ module.exports = {
     runtimeChunk: 'single',
   },
   mode: 'development',
-}
+};
