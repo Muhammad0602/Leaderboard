@@ -1,18 +1,18 @@
 import './style.css';
-import {post, update} from "./modules/game.js";
+import { post, update } from './modules/game.js';
 
 const form = document.querySelector('#form');
 const refresh = document.querySelector('.refresh');
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    post();
-})
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  post();
+});
 
 refresh.addEventListener('click', () => {
-    update()
-})
+  update();
+});
 
 window.addEventListener('DOMContentLoaded', () => {
-    update()
-})
+  update();
+});
