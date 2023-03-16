@@ -1,8 +1,4 @@
-import './style.css';
-
-// const id = "WXAmyWd8ftkV5nFVGtEc";
-
- const post = async () => {
+const post = async () => {
     try{
        const response = await fetch(
         'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/WXAmyWd8ftkV5nFVGtEc/scores/',
@@ -18,14 +14,13 @@ import './style.css';
        });
         const data =  await response.json();
         return data;  
-    }
-    catch(e) {
+    } catch(e) {
         console.log("There is an error, please check");
     }
   return "Leaderboard score created correctly"
  }
 
-post().then(result => console.log(result))
+// post().then(result => console.log(result))
 
 const get = async () => {
     const response = await fetch(
@@ -35,4 +30,4 @@ const get = async () => {
         return data;
 }
 
-get().then(result => console.log(result));
+// get().then(result => console.log(result));

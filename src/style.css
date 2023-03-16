@@ -56,9 +56,22 @@ tr:nth-child(even) {
   gap: 1rem;
 }
 
-.input {
-  padding: 0.2rem;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
+
+.input {
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.5rem;
+  background: rgb(31, 19, 19);
+}
+
+::placeholder {
+  color: rgb(255, 255, 255, 0.7);
+}
+
 
 .btn {
   padding: 0.3rem;
