@@ -1,3 +1,7 @@
+const user = document.querySelector('.name');
+const score = document.querySelector('.score');
+const scoreTable = document.querySelector('.score-history');
+
 const post = async () => {
     try{
        const response = await fetch(
@@ -8,10 +12,12 @@ const post = async () => {
             'Content-Type': 'application/json',
          },
          body: JSON.stringify({
-            user: "Muhammad", 
-            score: "99"
+            user: user.value, 
+            score: score.value
          }),
        });
+        user.value = "";
+        score.value = "";
         const data =  await response.json();
         return data;  
     } catch(e) {
@@ -20,14 +26,27 @@ const post = async () => {
   return "Leaderboard score created correctly"
  }
 
-// post().then(result => console.log(result))
-
 const get = async () => {
-    const response = await fetch(
+    try{
+       const response = await fetch(
         'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/WXAmyWd8ftkV5nFVGtEc/scores/',
         );
-    const data = await response.json();
-        return data;
+       const data = await response.json();
+        return data;  
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-// get().then(result => console.log(result));
+const update = () => {
+    get().then(res => {
+        res.result.forEach(user => {
+        const tr = document.createElement('tr');   
+        tr.innerHTML = `<td> ${user.user}<td>
+                        <td> ${user.score}</td>`;
+        scoreTable.appendChild(tr);
+        })
+    });
+}
+
+export {post, update};

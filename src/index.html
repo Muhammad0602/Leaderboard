@@ -11,7 +11,7 @@
         <div class="recent-scores">
             <div>
                 <h2>Recent Scores</h2>
-                <button class="btn">Refresh</button>
+                <button class="btn refresh">Refresh</button>
             </div>
             <table class="score-history">
                 <!-- <tr>
@@ -38,9 +38,9 @@
         </div>
         <div class="add-score">
             <h2>Add your score</h2>
-            <form action="">
-              <input class="name input" type="text" placeholder="Your name">
-              <input class="score input" type="text" placeholder="Your score">
+            <form id="form">
+              <input class="name input" type="text" placeholder="Your name" required>
+              <input class="score input" type="number" max="100" placeholder="Your score" required>
               <button class="btn">Submit</button>   
             </form>
                       
