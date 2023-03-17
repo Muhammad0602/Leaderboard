@@ -41,7 +41,8 @@
   "dependencies": {
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
-    "postcss-preset-env": "^8.0.1"
+    "postcss-preset-env": "^8.0.1",
+    "sweetalert2": "^11.7.3"
   },
   "main": "webpack.config.js"
 }
