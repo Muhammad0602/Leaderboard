@@ -1,4 +1,5 @@
 import './style.css';
+import Swal from 'sweetalert2';
 import { post, update } from './modules/game.js';
 
 const form = document.querySelector('#form');
@@ -35,4 +36,3 @@ refresh.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   update(scoreTable);
 });
-

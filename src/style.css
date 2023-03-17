@@ -42,11 +42,10 @@ h1 {
   width: 100%;
   flex-direction: column;
   border-collapse: collapse;
-  border: 2px solid black;
   max-height: 20rem;
   overflow-y: scroll;
   padding: 1rem;
-  border: 3px solid hsl(176, 100%, 69%); 
+  border: 3px solid hsl(176, 100%, 69%);
 }
 
 tr {
@@ -116,8 +115,8 @@ form {
   }
 
   h1 {
-  margin: 3rem 10rem;
-  font-size: 4rem;
+    margin: 3rem 10rem;
+    font-size: 4rem;
   }
 }
 
