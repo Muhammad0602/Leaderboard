@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wbpack Exercise</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css"
+  />
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+<body>
+    <h1>Leaderboard</h1>
+    <div class="main-container">
+        <div class="recent-scores">
+            <div>
+                <h2>Recent Scores</h2>
+                <button class="btn refresh">Refresh</button>
+            </div>
+            <table class="score-history">
+            </table>
+        </div>
+        <div class="add-score">
+            <h2>Add your score</h2>
+            <form id="form">
+              <input class="name input" type="text" placeholder="Your name" required>
+              <input class="score input" type="number" max="100" placeholder="Your score" required>
+              <button class="btn">Submit</button>   
+            </form>
+                      
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
