@@ -53,8 +53,8 @@ This project is about interating with API. You can sumbit your score, and see it
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-- not available
+ 
+- [Live Demo](https://muhammad0602.github.io/Leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
