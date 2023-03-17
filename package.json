@@ -32,7 +32,6 @@
     "style-loader": "^3.3.1",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
-    "sweetalert2": "^11.7.3",
     "tailwindcss": "^3.2.7",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
@@ -45,7 +44,8 @@
     "postcss-preset-env": "^8.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0"
+    "stylelint-csstree-validator": "^1.9.0",
+    "sweetalert2": "^11.7.3"
   },
   "main": "webpack.config.js"
 }

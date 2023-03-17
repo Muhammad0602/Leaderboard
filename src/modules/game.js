@@ -37,9 +37,9 @@ const get = async () => {
 };
 
 const update = (scoreTable) => {
-  scoreTable.innerHTML="";
+  scoreTable.innerHTML = '';
   get().then((res) => {
-    const sorted = res.result.sort((a,b) => b.score-a.score);
+    const sorted = res.result.sort((a, b) => b.score - a.score);
     sorted.forEach((user) => {
       const tr = document.createElement('tr');
       tr.innerHTML = `<td> ${user.user}<td>

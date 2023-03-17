@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const Swal = require('sweetalert2');
+// const Swal = require('sweetalert2');
 
 module.exports = {
   entry: './src/index.js',
