@@ -3,16 +3,19 @@ import { post, update } from './modules/game.js';
 
 const form = document.querySelector('#form');
 const refresh = document.querySelector('.refresh');
+const user = document.querySelector('.name');
+const score = document.querySelector('.score');
+const scoreTable = document.querySelector('.score-history');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  post();
+  post(user, score);
 });
 
 refresh.addEventListener('click', () => {
-  update();
+  update(scoreTable);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  update();
+  update(scoreTable);
 });

@@ -1,25 +1,26 @@
 {
-  "name": "leader-boards",
+  "name": "leaderboard",
   "version": "1.0.0",
-  "description": "",
+  "description": "<a name=\"readme-top\"></a>",
   "private": true,
   "scripts": {
-    "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "deploy": "gh-pages -d dist"
+    "start": "webpack serve --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BahirHakimy/Leader-boards.git"
+    "url": "git+https://github.com/Muhammad0602/Leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BahirHakimy/Leader-boards.git/issues"
+    "url": "https://github.com/Muhammad0602/Leaderboard.git/issues"
   },
-  "homepage": "https://github.com/BahirHakimy/Leader-boards.git#readme",
+  "homepage": "https://github.com/Muhammad0602/Leaderboard.git#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
@@ -41,5 +42,6 @@
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
     "postcss-preset-env": "^8.0.1"
-  }
+  },
+  "main": "webpack.config.js"
 }

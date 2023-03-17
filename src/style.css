@@ -15,7 +15,6 @@ h1 {
 
 .main-container {
   display: flex;
-  align-items: center;
   justify-self: center;
   gap: 5rem;
 }
@@ -29,6 +28,7 @@ h1 {
 
 .recent-scores div {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -76,6 +76,16 @@ form {
 }
 
 .btn {
-  padding: 0.3rem;
-  width: 5rem;
+  padding: 2px 5px;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgb(11, 226, 11);
+  font-size: 15px;
+  transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+  background: black;
+  color: rgb(11, 226, 11);
 }

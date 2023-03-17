@@ -1,8 +1,4 @@
-const user = document.querySelector('.name');
-const score = document.querySelector('.score');
-const scoreTable = document.querySelector('.score-history');
-
-const post = async () => {
+const post = async (user, score) => {
   try {
     const response = await fetch(
       'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/WXAmyWd8ftkV5nFVGtEc/scores/',
@@ -40,7 +36,7 @@ const get = async () => {
   }
 };
 
-const update = () => {
+const update = (scoreTable) => {
   get().then((res) => {
     res.result.forEach((user) => {
       const tr = document.createElement('tr');
