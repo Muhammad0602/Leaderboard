@@ -78,8 +78,10 @@ git clone github.com/Muhammad0602/Portfolio-mobile-first.git
 
 ### Usage
 
-To run the project, execute the following command:
- open the project by launching the Live Server plugging in visual studio code(or your code editor) 
+To run the project, execute the following commands:
+ - first `npm install`
+ - second `npm run build`
+ - and lastly `npm start`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
