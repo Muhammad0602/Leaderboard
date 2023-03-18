@@ -1,11 +1,7 @@
-const user = document.querySelector('.name');
-const score = document.querySelector('.score');
-const scoreTable = document.querySelector('.score-history');
-
-const post = async () => {
+const post = async (user, score) => {
   try {
     const response = await fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/WXAmyWd8ftkV5nFVGtEc/scores/',
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/7V2yrQIuAs7LkN5UVZuE/scores/',
       {
         method: 'POST',
         headers: {
@@ -30,7 +26,7 @@ const post = async () => {
 const get = async () => {
   try {
     const response = await fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/WXAmyWd8ftkV5nFVGtEc/scores/',
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/7V2yrQIuAs7LkN5UVZuE/scores/',
     );
     const data = await response.json();
     return data;
@@ -40,9 +36,11 @@ const get = async () => {
   }
 };
 
-const update = () => {
+const update = (scoreTable) => {
+  scoreTable.innerHTML = '';
   get().then((res) => {
-    res.result.forEach((user) => {
+    const sorted = res.result.sort((a, b) => b.score - a.score);
+    sorted.forEach((user) => {
       const tr = document.createElement('tr');
       tr.innerHTML = `<td> ${user.user}<td>
                         <td> ${user.score}</td>`;

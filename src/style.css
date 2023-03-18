@@ -5,17 +5,19 @@
 }
 
 body {
-  background-color: bisque;
+  background-image: url(/images/board.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 h1 {
-  margin: 2rem 4rem;
+  margin: 3rem 7rem;
   font-size: 3rem;
 }
 
 .main-container {
   display: flex;
-  align-items: center;
   justify-self: center;
   gap: 5rem;
 }
@@ -29,7 +31,10 @@ h1 {
 
 .recent-scores div {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
+  width: 25em;
 }
 
 .score-history {
@@ -37,19 +42,28 @@ h1 {
   width: 100%;
   flex-direction: column;
   border-collapse: collapse;
-  border: 2px solid black;
   max-height: 20rem;
   overflow-y: scroll;
+  padding: 1rem;
+  border: 3px solid hsl(176, 100%, 69%);
 }
 
 tr {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  border-radius: 0.3rem;
 }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+  color: black;
+}
+
+tr:nth-child(odd) {
+  background-color: #1dc826;
+  color: black;
+  margin: 0.3rem 0;
 }
 
 .add-score {
@@ -71,11 +85,63 @@ form {
   color: white;
 }
 
+.input:focus {
+  border: 1px solid white;
+}
+
 ::placeholder {
   color: rgb(255, 255, 255, 0.7);
 }
 
 .btn {
-  padding: 0.3rem;
-  width: 5rem;
+  padding: 2px 5px;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgb(11, 226, 11);
+  font-size: 15px;
+  transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+  background: black;
+  color: rgb(11, 226, 11);
+}
+
+@media screen and (min-width: 992px) {
+  .main-container {
+    margin: 2rem 7rem;
+    gap: 5rem;
+  }
+
+  h1 {
+    margin: 3rem 10rem;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .score-history {
+    width: 80%;
+    margin: 0;
+  }
+
+  .main-container {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recent-scores {
+    align-items: center;
+  }
+
+  .input {
+    width: 150px;
+  }
+
+  h1 {
+    margin: 1rem 2rem;
+    font-size: 2.5rem;
+  }
 }
