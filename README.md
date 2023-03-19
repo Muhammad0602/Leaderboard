@@ -48,7 +48,7 @@ This project is about interating with API. Using `POST` and `GET` methods you ca
 ### Key Features <a name="key-features"></a>
 
 - Interactions.
-- Time tracking.
+- API.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
