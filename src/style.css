@@ -5,14 +5,26 @@
 }
 
 body {
-  background-image: url(/images/board.jpg);
+  background-image: url(./images/board.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
 }
 
-h1 {
+header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
   margin: 3rem 7rem;
+}
+
+#cup {
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
   font-size: 3rem;
 }
 
@@ -39,11 +51,14 @@ h1 {
 
 .score-history {
   display: flex;
-  width: 100%;
+
+  /* width: 100%; */
+  max-width: 25em;
   flex-direction: column;
   border-collapse: collapse;
   max-height: 20rem;
   overflow-y: scroll;
+  overflow-x: hidden;
   padding: 1rem;
   border: 3px solid hsl(176, 100%, 69%);
 }
@@ -99,7 +114,11 @@ form {
   height: 40px;
   border-radius: 8px;
   background: rgb(11, 226, 11);
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
   transition: all 0.5s ease-out;
 }
 
@@ -108,14 +127,51 @@ form {
   color: rgb(11, 226, 11);
 }
 
+.refresh {
+  animation: refreshBtn 6s ease-out infinite;
+  border-radius: 1rem;
+}
+
+@keyframes refreshBtn {
+  40% { transform: translateY(0) rotateZ(0deg); }
+
+  43% {
+    transform: translateY(-30px) rotateZ(15deg);
+    background: aqua;
+  }
+
+  46% {
+    transform: translateY(-30px) rotateZ(-15deg);
+    background: aqua;
+  }
+
+  49% {
+    transform: translateY(-30px) rotateZ(15deg);
+    background: aqua;
+  }
+
+  52% {
+    transform: translateY(-30px) rotateZ(-15deg);
+    background: aqua;
+  }
+
+  56% {
+    transform: translateY(0) rotateZ(0deg);
+    background: aqua;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .main-container {
     margin: 2rem 7rem;
     gap: 5rem;
   }
 
-  h1 {
+  header {
     margin: 3rem 10rem;
+  }
+
+  h1 {
     font-size: 4rem;
   }
 }
@@ -140,8 +196,11 @@ form {
     width: 150px;
   }
 
-  h1 {
+  header {
     margin: 1rem 2rem;
+  }
+
+  h1 {
     font-size: 2.5rem;
   }
 }
