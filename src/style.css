@@ -51,6 +51,7 @@ h1 {
 
 .score-history {
   display: flex;
+
   /* width: 100%; */
   max-width: 25em;
   flex-direction: column;
@@ -128,26 +129,32 @@ form {
 
 .refresh {
   animation: refreshBtn 6s ease-out infinite;
-  border-radius: 1rem; 
+  border-radius: 1rem;
 }
 
 @keyframes refreshBtn {
-  40% {transform: translateY(0) rotateZ(0deg)}
+  40% { transform: translateY(0) rotateZ(0deg); }
+
   43% {
     transform: translateY(-30px) rotateZ(15deg);
-    background: aqua;}
+    background: aqua;
+  }
+
   46% {
     transform: translateY(-30px) rotateZ(-15deg);
     background: aqua;
   }
+
   49% {
     transform: translateY(-30px) rotateZ(15deg);
     background: aqua;
   }
+
   52% {
     transform: translateY(-30px) rotateZ(-15deg);
     background: aqua;
   }
+
   56% {
     transform: translateY(0) rotateZ(0deg);
     background: aqua;
@@ -165,7 +172,7 @@ form {
   }
 
   h1 {
-     font-size: 4rem;
+    font-size: 4rem;
   }
 }
 
@@ -194,6 +201,6 @@ form {
   }
 
   h1 {
-     font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 }

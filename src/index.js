@@ -1,6 +1,6 @@
 import './style.css';
-import cup from './images/cup.jpg';
 import Swal from 'sweetalert2';
+import cup from './images/cup.jpg';
 import { post, update } from './modules/game.js';
 
 const form = document.querySelector('#form');

@@ -45,26 +45,28 @@ const update = (scoreTable) => {
   get().then((res) => {
     const sorted = res.result.sort((a, b) => b.score - a.score);
     sorted.forEach((user, index) => {
-      if(index === 0) {   const tr = document.createElement('tr');
-      tr.innerHTML = `<td><img width="20px" height="20px" src=${first}>  ${user.user}<td>
-                        <td> ${user.score}</td>`;
-      scoreTable.appendChild(tr)}
-      else if(index === 1) {   const tr = document.createElement('tr');
-      tr.innerHTML = `<td><img width="20px" height="20px" src=${second}>  ${user.user}<td>
-                        <td> ${user.score}</td>`;
-      scoreTable.appendChild(tr)}
-      else if(index === 2) {   const tr = document.createElement('tr');
-      tr.innerHTML = `<td><img width="20px" height="20px" src=${third}>  ${user.user}<td>
-                        <td> ${user.score}</td>`;
-      scoreTable.appendChild(tr)}
-
-      else { 
+      if (index === 0) {
         const tr = document.createElement('tr');
-            tr.innerHTML = `<td>${index+1}.   ${user.user}<td>
+        tr.innerHTML = `<td><img width="20px" height="20px" src=${first}>  ${user.user}<td>
+                        <td> ${user.score}</td>`;
+        scoreTable.appendChild(tr);
+      } else if (index === 1) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td><img width="20px" height="20px" src=${second}>  ${user.user}<td>
+                        <td> ${user.score}</td>`;
+        scoreTable.appendChild(tr);
+      } else if (index === 2) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td><img width="20px" height="20px" src=${third}>  ${user.user}<td>
+                        <td> ${user.score}</td>`;
+        scoreTable.appendChild(tr);
+      } else {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${index + 1}.   ${user.user}<td>
                               <td> ${user.score}</td>`;
-            scoreTable.appendChild(tr);
-      }     
-    }); 
+        scoreTable.appendChild(tr);
+      }
+    });
   });
 };
 
