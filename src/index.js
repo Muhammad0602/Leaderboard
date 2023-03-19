@@ -1,4 +1,5 @@
 import './style.css';
+import cup from './images/cup.jpg';
 import Swal from 'sweetalert2';
 import { post, update } from './modules/game.js';
 
@@ -7,6 +8,9 @@ const refresh = document.querySelector('.refresh');
 const user = document.querySelector('.name');
 const score = document.querySelector('.score');
 const scoreTable = document.querySelector('.score-history');
+
+const cupImg = document.querySelector('#cup');
+cupImg.src = cup;
 
 const toast = Swal.mixin({
   toast: true,
