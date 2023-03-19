@@ -29,7 +29,7 @@
 # 📖Leaderboard <a name="about-project"></a>
 
 
-This project is about interating with API. You can sumbit your score, and see it in the board after it is refreshed.
+This project is about interating with API. Using `POST` and `GET` methods you can sumbit your score, and see it in the board after it is refreshed.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -98,7 +98,7 @@ To run the project, execute the following commands:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - I am working on the desktop version of the project, and soon God willing I'll deploy it.
-- I am working to add some other loading like fonts, urls etc.
+- I am working to add some beautiful design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +113,7 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 
-If you like this project leave it a star.
+If you like this project leave it a star ⭐.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
