@@ -48,7 +48,7 @@ This project is about interating with API. You can sumbit your score, and see it
 ### Key Features <a name="key-features"></a>
 
 - Interactions.
-- Time tracking.
+- API.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
