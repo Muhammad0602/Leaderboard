@@ -29,7 +29,7 @@
 # 📖Leaderboard <a name="about-project"></a>
 
 
-This project is about interating with API. Using `POST` and `GET` methods you can sumbit your score, and see it in the board after it is refreshed.
+The Leaderboard project is a dynamic platform that allows users to submit their names and scores, which are then retrieved and displayed through an API integration. With a sleek and responsive design, this project offers an engaging experience for participants. The user-submitted scores are showcased in a visually appealing table, ranking participants and awarding the top three performers with well-deserved medals. This interactive solution provides an enjoyable way to track and celebrate achievements while maintaining a user-friendly and modern interface
 
 ## 🛠 Built With <a name="built-with"></a>
 
