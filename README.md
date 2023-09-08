@@ -54,7 +54,7 @@ The Leaderboard project is a dynamic platform that allows users to submit their 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
  
-- [Live Demo](https://muhammad0602.github.io/Leaderboard/)
+- [Live](https://muhammad0602.github.io/Leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
